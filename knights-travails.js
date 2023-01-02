@@ -30,3 +30,14 @@ for (let i = 0; i < BOARD.length; i++) {
     BOARD[i].top = i + 8;
   }
 }
+
+// randomly generate knight spawn and knight coordinate
+const getCoor = () => {
+  const x = Math.floor(Math.random() * 8);
+  const y = Math.floor(Math.random() * 8);
+  return [x, y];
+};
+
+const knight = getCoor();
+const target = getCoor();
+console.log(knight, target);
